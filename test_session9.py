@@ -32,8 +32,8 @@ def test_htmlize_Real():
 
 def test_authentication():
     current_password=session9.set_password()
-    k=current_password()
-    authen_t = session9.authenticate(session9.summation2,k,'secret')
+    #k=current_password()
+    authen_t = session9.authenticate(session9.summation2,current_password,'secret')
     k=authen_t(1,2)
     assert k==3 
 

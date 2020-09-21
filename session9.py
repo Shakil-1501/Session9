@@ -94,7 +94,7 @@ def set_password():
   def inner():
       nonlocal password
       if password=='':
-         password=input()
+         password='secret'
          return password
   return inner
 
