@@ -33,7 +33,7 @@ def test_htmlize_Real():
 def test_authentication():
     #current_password=session9.set_password()
     #z=current_password()
-    z=
+    
     authen_t = session9.authenticate(session9.summation2,'secret')
     k=authen_t(1,2)
     assert k==3 
