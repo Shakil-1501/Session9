@@ -13,6 +13,9 @@ from datetime import datetime, timezone
 
 
 def logged(fn):
+    '''
+    It gives the log of the function which is passed
+    '''
     from functools import wraps
     from datetime import datetime, timezone
 
