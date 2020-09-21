@@ -107,7 +107,7 @@ def summation2(a,b):
 
 def authenticate(fn,current_password,user_password):
   cnt=0
-  if user_password == k:
+  if user_password == current_password:
      def inner(*args,**kwargs):
          nonlocal cnt
          cnt+=1
