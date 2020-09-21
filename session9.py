@@ -39,6 +39,10 @@ def summation(a,b):
 
 
 def check_odd_seconds(fn):
+    '''
+    Returns the result of passed function only at odd seconds
+    
+    '''
     from functools import wraps
     from datetime import datetime, timezone
 
@@ -64,6 +68,10 @@ def add(a,b):
 
 
 def timed(reps):
+    '''
+    Returns the average runtime of function as well as result of function
+    
+    '''
     def dec(fn):
         from time import perf_counter
 
@@ -109,6 +117,10 @@ def summation2(a,b):
     return a+b
 
 def authenticate(fn,user_password):
+  '''
+  Returns the result of the function if user password matches with current password
+  
+  '''
   cnt=0
   current_password=set_password()
   k=current_password()
@@ -154,6 +166,9 @@ def html_sequence(d):
 
 
 def previlege(privileges):
+  '''
+  return the employee details based on privileges
+  '''
 
   def dec(fn):
       def inner():
