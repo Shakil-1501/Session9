@@ -20,8 +20,21 @@ def test_timed():
     assert type(l) is int
 
 
-def test_htmlize():
+def test_htmlize_integral():
     k=session9.htmlize(100)
     assert k == '100(<i>0x64</i>)'
+
+
+def test_htmlize_Real():
+    k=session9.htmlize(3.467)
+    assert k == '3.47'
+
+
+def test_authentication():
+    current_password=session9.set_password()
+    k=current_password()
+    authen_t = session9.authenticate(session9.summation2,k,'secret')
+    k=authen_t(1,2)
+    assert k==3 
 
 
