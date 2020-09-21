@@ -99,8 +99,8 @@ def set_password():
   return inner
 
 
-current_password=set_password()
-k=current_password()
+#current_password=set_password()
+#k=current_password()
 
 def authenticate(fn,current_password,user_password):
   cnt=0
