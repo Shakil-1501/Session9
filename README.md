@@ -14,7 +14,7 @@
 
 &nbsp;
 ``` html 
-    check,summation,counter,counter2,check_fibonacci
+    logged,timed,check_odd_seconds,authenticate,htmlize,html_real,html_sequence
                             
                             
                           
