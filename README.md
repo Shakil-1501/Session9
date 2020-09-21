@@ -28,8 +28,8 @@
 ---
 &nbsp;
 ## Files
- - Test File : [PyTest file](https://github.com/Shakil-1501/Session8/blob/master/test_session8.py)
- - Code: [Method Implemantation](https://github.com/Shakil-1501/Session8/blob/master/session8.py)
+ - Test File : [PyTest file](https://github.com/Shakil-1501/Session9/blob/master/test_session9.py)
+ - Code: [Method Implemantation](https://github.com/Shakil-1501/Session9/blob/master/session9.py)
  - colab File: [![a](https://github.com/jagatabhay/TSAI/blob/master/openincolablogo.JPG)](https://colab.research.google.com/drive/18aU2U-RO4w09l7RJYoCtJ0XVF5-xOjqv?usp=sharing)
 &nbsp;
 ---
@@ -42,7 +42,7 @@
 | 2 | check_odd_seconds | This function returns the sum of two numbers when there is odd seconds  |
 | 3 | timed |The function takes in function as parameters and returns the average runtime and result of the function  |
 | 4 | authenticate | The function takes in function.user password  as parameters and returns the results only if current password matches with user password |
-
+|5| previlege | This decorator factory takens in previlege as input based on that provide access to 1,2,3 or 4 varaiables of Employee details of a comapny |
 
 ## Test Cases Results
 | Serial No  | Test Case | Result |
@@ -57,6 +57,7 @@
 | 8 | test_odd_seconds_func | Pass |
 | 9 | test_timed | Pass |
 | 10 | test_authentication | Pass | 
+|11| test_previleges |Pass|
 
 ---
 
