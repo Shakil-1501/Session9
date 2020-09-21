@@ -44,6 +44,6 @@ def test_privileges():
     m=session9.info2()
     n=session9.info3()
     o=session9.info4()
-    assert type(l) is tuple and type(m) is tuple and type(n) is tuple and type(o) is tuple
+    assert type(l) is tuple and type(m) is tuple and type(n) is tuple and type(o) is str
 
 
