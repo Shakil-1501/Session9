@@ -20,4 +20,8 @@ def test_timed():
     assert type(l) is int
 
 
+def test_htmlize():
+    k=session9.htmlize(100)
+    assert k == '100(<i>0x64</i>)'
+
 
