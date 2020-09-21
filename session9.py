@@ -150,3 +150,53 @@ def html_sequence(d):
        return '<ul>\n' + '\n'.join(items) + '\n</ul>'
 
 
+def previlege(privileges):
+
+  def dec(fn):
+      def inner():
+          print("*** Employee Details ***")
+          if privileges=='high':
+            result=fn()
+          elif privileges=='mid':
+            result=fn()
+          elif privileges=='low':
+            result=fn()
+          elif privileges=='no':
+            result=fn()
+          return result  
+
+      return inner
+  return dec 
+
+
+@previlege('high')
+def info1():
+  #print("*** Employee Details ***")
+  name="shakil"
+  employeeno='780292'
+  BloodGroup='B+ve'
+  Salary=32000
+  return name,employeeno,BloodGroup,Salary
+
+@previlege('mid')
+def info2():
+  #print("*** Employee Details ***")
+  name="shakil"
+  employeeno='780292'
+  BloodGroup='B+ve'
+  return name,employeeno,BloodGroup
+
+@previlege('low')
+def info3():
+  #print("*** Employee Details ***")
+  name="shakil"
+  employeeno='780292'
+  return name,employeeno
+
+@previlege('no')
+def info4():
+  #print("*** Employee Details ***")
+  name="shakil"
+  return name
+
+
